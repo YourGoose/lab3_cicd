@@ -26,6 +26,11 @@ jobs:
         run: |
           source venv/bin/activate
           pytest -v
+      
+      - name: Tests failed message
+        if: failure()
+        run: |
+          echo "Тесты не пройдены, ошибка в коде"
 
   deploy:
     runs-on: self-hosted
@@ -38,4 +43,4 @@ jobs:
 
       - name: Deploy
         run: |
-          echo "Код успешно протестирован и развёрнут на сервере!"
+          echo "Код успешно прошёл все тесты"

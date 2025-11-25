@@ -28,7 +28,7 @@ def main_first_script():
    a, b, c = map(int, input('Пожалуйста, введите три числа через пробел: ').split())
    result = square_eq_solver(a, b, c)
    show_result(result)
-   return result  
+   return result  gfgfgfgfgfgfg
 
 
 def is_palindrome_iterative(s):

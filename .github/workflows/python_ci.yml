@@ -8,14 +8,11 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: self-hosted   
-    steps:
-      - uses: actions/checkout@v3
+    runs-on: self-hosted
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: |
@@ -29,9 +26,12 @@ jobs:
   deploy:
     runs-on: self-hosted
     needs: build-and-test
-    if: success()   
-    steps:
-      - uses: actions/checkout@v3
+    if: success()
 
-      - name: Deploy code
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy
         run: |
+          echo "Код успешно протестирован и развёрнут на сервере!"

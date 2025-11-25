@@ -16,7 +16,7 @@ def square_eq_solver(a, b, c):
    return result
 
 
-def show_result(data):
+def show_result(data)ghgh
    if len(data) > 0:
        for index, value in enumerate(data):
            print(f'Корень номер {index+1} равен {value:.02f}')

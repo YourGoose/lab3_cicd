@@ -53,7 +53,7 @@ def compute_factorial(n):
     factorial = 1
     for i in range(1, n + 1):
         factorial *= i
-    print(f"Факториал числа {n} равен {factorial}")
+    print(f"Факториал числа {n} равен {factorial}!")
     return factorial
 
 def main_third_script():

@@ -53,7 +53,7 @@ def compute_factorial(n):
     factorial = 1
     for i in range(1, n + 1):
         factorial *= i
-    print(f"Факториал числа {n} равен {factorial}")
+    print(f"Факториал числа {n} равен {factorial}!")
     return factorial
 
 def main_third_script():
@@ -62,7 +62,7 @@ def main_third_script():
    return result 
 	
 
-def main():
+def main()ссс:
     num = input("Введите номер скрипта: 1-квадратное уравление, 2-палиндром, 3-факториал: ")
     if int(num) == 1:
       main_first_script()

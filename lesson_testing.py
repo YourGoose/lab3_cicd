@@ -62,7 +62,7 @@ def main_third_script():
    return result 
 	
 
-def main():прпр
+def main():
     num = input("Введите номер скрипта: 1-квадратное уравление, 2-палиндром, 3-факториал: !!!")
     if int(num) == 1:
       main_first_script()
